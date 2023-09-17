@@ -1,5 +1,7 @@
 import { Bars3Icon } from "@heroicons/react/20/solid"
 import { EllipsisHorizontalCircleIcon } from "@heroicons/react/24/solid"
+import NavLinks from "./NavLinks"
+import SearchBox from "./SearchBox"
 const Header = () => {
   return (
     <header>
@@ -18,8 +20,10 @@ const Header = () => {
             <div className="flex-none hidden md:inline px=4 lg:px-8 py-2 lg:py-4">
                 <EllipsisHorizontalCircleIcon className="h-8 w-8 cursor-pointer"/>
             </div>
-
         </div>
+
+        <NavLinks />
+        <SearchBox />
     </header>
   )
 }
