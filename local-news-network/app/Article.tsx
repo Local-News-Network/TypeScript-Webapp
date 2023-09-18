@@ -34,10 +34,10 @@ function Article({ article }: Props) {
             }`}
           />
           {isHovered && (
-            <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center text-white text-center bg-black bg-opacity-60 p-4">
+            <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center text-center bg-black bg-opacity-60 p-4">
               <h2 className="text-md font-serif font-semibold overflow-hidden overflow-ellipsis">{article.title}</h2>
               <p className="text-xs line-clamp-2 overflow-hidden overflow-ellipsis">{article.description}</p>
-              <ReadMoreButton article={article}/>
+              <ReadMoreButton placement={"0"} article={article}/>
             </div>
           )}
         </>
@@ -49,7 +49,7 @@ function Article({ article }: Props) {
             <p className="text-xs line-clamp-6 overflow-hidden overflow-ellipsis">{article.description}</p>
           </section>
         </div>
-        <ReadMoreButton article={article}/>
+        <ReadMoreButton placement={"1"} article={article}/>
       </div>
       }
       </div>

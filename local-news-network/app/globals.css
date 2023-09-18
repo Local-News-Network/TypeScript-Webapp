@@ -31,4 +31,8 @@ body {
     @apply hover:underline text-center text-center active:underline underline-offset-8 rounded-full p-4 cursor-pointer hover:font-bold
     capitalize hover:scale-110 transition-transform duration-200 ease-out
   }
+
+  .headerTitle {
+    @apply text-4xl font-serif capitalize px-10 pt-5 underline underline-offset-4 
+  }
 }
